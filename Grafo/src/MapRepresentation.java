@@ -10,18 +10,15 @@ public static Graph getCities() {
         Node tabasco = new Node("Tabasco");
         Node guadalajara = new Node("Guadalajara");
  
-        df.addEdge(new Edge(df, toluca, 100));
-        df.addEdge(new Edge(df, cuernavaca, 90));
+        df.addEdge(new Edge(df, toluca, 63.4));
+        df.addEdge(new Edge(df, cuernavaca, 92.8));
         df.addEdge(new Edge(df, campeche, 1133.8));
  
-        toluca.addEdge(new Edge(toluca, cuernavaca, 150));
-        toluca.addEdge(new Edge(toluca, puebla, 350));
-        toluca.addEdge(new Edge(toluca, tlaxcala, 340));
+        toluca.addEdge(new Edge(toluca, tabasco, 857.8));
+        toluca.addEdge(new Edge(toluca, puebla, 195.1));
+        toluca.addEdge(new Edge(toluca, tlaxcala, 180.7));
  
-        cuernavaca.addEdge(new Edge(cuernavaca, puebla, 100));
- 
-        puebla.addEdge(new Edge(puebla, tlaxcala, 20));
- 
+        cuernavaca.addEdge(new Edge(cuernavaca, guadalajara, 609.1));
         Graph graph = new Graph();
         graph.addNode(df);
         graph.addNode(toluca);
